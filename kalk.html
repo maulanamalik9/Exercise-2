@@ -1,0 +1,45 @@
+<html>
+        <link rel="stylesheet" href="kalk.css">
+    <h1> <center><b>Kalkulator</b></center></h1>
+    <br>
+   
+    <form>
+        <input type="number" id="satu" placeholder="type your equations" class="box"/> <br>
+        <input type="number" id="dua" placeholder="type second number"  class="ibox">
+               <br>
+        
+    </form>
+
+    <p id="result"></p>
+<ul>
+    <li>
+    <button onclick="
+    document.getElementById('result').innerHTML = parseFloat(document.getElementById('satu').value) + parseFloat(document.getElementById('dua').value) " >
+     Tambah     
+    
+    </button>
+    </li>
+
+    <li>
+    <button onclick="
+    document.getElementById('result').innerHTML = parseFloat(document.getElementById('satu').value) - parseFloat(document.getElementById('dua').value) " >
+     Kurang     
+    
+    </button>
+    </li>
+    <li>
+    <button onclick="
+    document.getElementById('result').innerHTML = parseFloat(document.getElementById('satu').value) * parseFloat(document.getElementById('dua').value) " >
+     Kali     
+    
+    </button>
+    </li>
+    <li>
+    <button onclick="
+    document.getElementById('result').innerHTML = parseFloat(document.getElementById('satu').value) / parseFloat(document.getElementById('dua').value) " >
+    Bagi         
+    
+    </button>
+    </li>   
+    </ul>
+</html>
